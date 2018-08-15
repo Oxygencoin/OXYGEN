@@ -1,0 +1,26 @@
+[Unit]
+Description=OXYGEN's distributed currency daemon
+After=network.target
+
+[Service]
+User=oxygen
+Group=oxygen
+
+Type=forking
+PIDFile=/var/lib/oxygend/oxygend.pid
+
+ExecStart=/usr/bin/oxygend -daemon -pid=/var/lib/oxygend/oxygend.pid \
+          -conf=/etc/oxygen/oxygen.conf -datadir=/var/lib/oxygend
+
+ExecStop=-/usr/bin/oxygen-cli -conf=/etc/oxygen/oxygen.conf \
+         -datadir=/var/lib/oxygend stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

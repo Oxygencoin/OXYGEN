@@ -1,0 +1,26 @@
+# /etc/conf.d/oxygend: config file for /etc/init.d/oxygend
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/oxygen/oxygen.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/oxygend"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/oxygend.pid"
+
+# Where to write oxygend data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/oxygend"
+
+# User and group to own oxygend process
+#BITCOIND_USER="oxygen"
+#BITCOIND_GROUP="oxygen"
+
+# Path to oxygend executable
+#BITCOIND_BIN="/usr/bin/oxygend"
+
+# Nice value to run oxygend under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

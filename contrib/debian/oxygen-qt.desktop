@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=OXYGEN
+Comment=OXYGEN P2P Cryptocurrency
+Comment[fr]=OXYGEN, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=OXYGEN, eşten eşe kriptografik sanal para birimi
+Exec=oxygen-qt %u
+Terminal=false
+Type=Application
+Icon=oxygen128
+MimeType=x-scheme-handler/oxygen;
+Categories=Office;Finance;
