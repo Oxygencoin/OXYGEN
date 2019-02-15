@@ -1259,7 +1259,11 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>My Masternodes</source>
-        <translation>Мои Мастерноды</translation>
+        <translation>Мои мастерноды</translation>
+    </message>
+    <message>
+        <source>All Masternodes</source>
+        <translation>Все мастерноды</translation>
     </message>
     <message>
         <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
